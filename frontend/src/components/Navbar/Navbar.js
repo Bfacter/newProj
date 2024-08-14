@@ -5,6 +5,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 import { faBasketShopping } from "@fortawesome/free-solid-svg-icons";
 import { faArrowRightToBracket } from "@fortawesome/free-solid-svg-icons";
+
+import SearchBar from "../SearchBar/SearchBar";
+
 function Navbar() {
   return (
     <div className="mainBar">
@@ -15,6 +18,7 @@ function Navbar() {
             <img src="/image.jpeg" alt="hello" />
           </Link>
         </div>
+        <SearchBar />
         <div className="navBarTitle">
           <div className="Login">
             <Link to="/login" style={{ textDecoration: "none" }}>
